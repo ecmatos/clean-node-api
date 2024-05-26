@@ -1,15 +1,14 @@
-import type {Config} from 'jest';
-
-const config: Config = {
+/** @type {import('jest').Config} */
+const config = {
+  roots: ['<rootDir>/src'],
   clearMocks: true,
   collectCoverage: true,
   collectCoverageFrom: ['<rootDir>/src/**/*.ts'],
   coverageDirectory: "coverage",
-  coverageProvider: "v8",
-  testEnvironment:'node',
-  transform: {
+  testEnvironmen: 'node',
+  trasform: {
     '.+\\.ts$': 'ts-jest'
   }
 };
 
-export default config;
+module.exports = config;
