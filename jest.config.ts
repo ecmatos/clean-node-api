@@ -5,8 +5,8 @@ const config = {
   collectCoverage: true,
   collectCoverageFrom: ['<rootDir>/src/**/*.ts'],
   coverageDirectory: "coverage",
-  testEnvironmen: 'node',
-  trasform: {
+  testEnvironment: 'node',
+  transform: {
     '.+\\.ts$': 'ts-jest'
   }
 };
